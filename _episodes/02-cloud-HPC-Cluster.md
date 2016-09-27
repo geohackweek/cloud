@@ -14,14 +14,14 @@ keypoints:
 - Azure equivalent (kilroy)
 ---
 
-### What is xarray?
+### What does an HPC cluster get me and when do I care?
 
-* originally developed by employees (Stephan Hoyer, Alex Kleeman and Eugene Brevdo) at [The Climate Corporation](https://climate.com/)
-* xaray extends some of the core functionality of Pandas:
-    * operations over _named_ dimensions
-    * selection by label instead of integer location
-    * powerful groupby functionality
-    * database-like joins
+* [hyperlink text](http://cloudraven.org)
+* indented bullet list
+    * what choo
+    * want all i ask
+    * take care of 
+    * TCB/IP
 
 ### When to use xarray:
 
