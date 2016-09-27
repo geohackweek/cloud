@@ -19,7 +19,7 @@ keypoints:
 Geoscientists often need to manipulate datasets structured as arrays. A common example is gridded data consisting of a set of climate variables (e.g. temperature and precipitation) that varies in space and time. Often we need to subset a large global dataset to look at data for a particular region, or select a specific time slice. Then we might want to apply statistical functions to these subsetted groups to generate summary information.
 
 <br>
-<img src="assets/img/redqueen.png" width = "800" border = "10">
+<img src="assets/img/redqueen.png" width = "700" border = "10">
 <br>
 
 > ## Isn't this the same as raster processing? 
