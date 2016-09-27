@@ -1,16 +1,17 @@
 ---
-title: "Using xarray"
-teaching: 45
-exercises: 15
+title: "HPC clusters on the public cloud"
+teaching: 30
+exercises: 0
 questions:
-- "What functionality does xarray offer?"
-- "When should I use xarray?"
+- "What does an HPC cluster get me and when do I care?"
+- "How much new stuff do I have to learn to be able to get Un-Stuck in HPC space?"
 objectives:
-- "selection and subsetting of array datasets using labeled indexing"
-- "grouping data and applying statistical functions across multiple dimensions"
-- "visualizing 1 and 2 dimensional slices of array data"
+- "Characterize HPC clusters and when they are a good idea and when not." 
+- "Understand ancillary tools like schedulers (Sun Grid Engine for example)."
+- "Understand the connection between infinite loops and debtors prison."
 keypoints:
-- xarray 
+- Cloud Formation Network stuff
+- Azure equivalent (kilroy)
 ---
 
 ### What is xarray?

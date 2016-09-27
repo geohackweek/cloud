@@ -1,55 +1,58 @@
 ---
-title: "Introduction to cloud computing in geoscience"
-teaching: 15
+title: "Intro to cloud computing in geoscience"
+teaching: 30
 exercises: 0
 questions:
-- "When do we need to use multidimensional arrays?"
-- "What are current challenges is manipulating these datasets?" 
+- "What are the basic virtues / benefits of using the public cloud?"
+- "What are cloud drawbacks?"
+- "How would I go about getting started with cloud computing?"
 objectives:
-- explore how most people currently handle these types of datasets
-- discuss how current methods are limiting the science that can be accomplished
+- Understand the data concept set { compute, store, manage, web, services } 
+- Understand the research computing concept set { build, test, share }
+- Discuss how cloud can overcome or bypass traditional research computing bottlenecks
 keypoints:
-- gridded data that vary in space and time are common in many geospatial applcations (e.g. climatology)
-- in-memory operations are needed to process and visualize these datasets
-- high resolution models and observations are producing gridded datasets that are too large for in-memory processes
-- new tools are needed that can accommodate the complexity and size of modern multidimensional datasets
+- cloud is cost-effective via utility (pay as you go) model (three penny opera)
+- cloud is secure via encryption and identity/access management tools
+- cloud has a cost of entry: You have to learn the ropes
+- cloud cost is dropping (e.g. consider Spot Market) so this may be a matter of not if but when
+- cloud uses the term 'scale' and that translates to 'I am (generally) not compute limited anymore.' 
+- cloud is also growing Services: Advanced concept, the metaphor is 'dinner without plates or table'.
 ---
 ### Overview:
 
-Geoscientists often need to manipulate datasets structured as arrays. A common example is gridded data consisting of a set of climate variables (e.g. temperature and precipitation) that varies in space and time. Often we need to subset a large global dataset to look at data for a particular region, or select a specific time slice. Then we might want to apply statistical functions to these subsetted groups to generate summary information.
+Geoscientists often need to manipulate datasets under four goals: Perfunctory processing, exploratory analysis, 
+store for later, share with colleagues. A simple example is 'I would like to pull data from the ARGO database
+and from satellite Sea Surface Temperature maps 
+in order to understand the ocean temperature and pH variability in the Northeast Pacific over the past five years.' 
+For subsetting and other procedural details you might refer to the 'multi-dimensional data' lesson portion of 
+geohackweek; here we take it as a given that you managed to extract this data from its sources. 
+
 
 <br>
-<img src="../fig/redqueen.png" width = "700" border = "10">
+<img src="../fig/redqueen.png" width = "600" border = "10">
 <br>
 
-> ## Isn't this the same as raster processing? 
-> The tools in this tutorial have some similarity to raster image processing tools.
-> Both require computational engines that can manipulate large stacks of data formatted as arrays. 
-> Here we focus on tools that are optimized to handle data that have many variables spanning dimensions
-> of time and space. See the raster tutorials for tools that are optimized for image processing of remote sensing datasets.
+> ## What does this have to do with basic cloud computing?
+> Well the idea is to make a dry exegesis on cloud computing a little more interesting with a geospatial goal driving it.
 {: .callout}
 
-### Common data formats:
+### Data concept set { compute, store, manage, web, services }
 
-Prior to about 1990, multidimensional array data were usually stored in binary formats that would be read by Fortran 
-or C++ libraries. Users were responsbile for setting up their own file structures and custom codes to handle these files.
+Prior to about 1990...
 
-In the early 1990s various US funding agencies began exploring portable, self-describing,
- machine independent scientific data formats. Two notable products came out of this effort:
+In the early 1990s...
+
+Two notable products came out of this effort:
 [netcdf](http://www.unidata.ucar.edu/software/netcdf/docs/), optimized
 for climate data analysis, and [hdf](https://www.hdfgroup.org/), used for many applications including
-distribution of remote sensing datasets. The benefits of these formats is that users could access information about the 
-file structure and variable contents from the file itself (assuming the creators of the data took the time to generate
-the appropriate metadata and attributes!).
+distribution of remote sensing datasets. 
 
-Note that these file formats are structured in ways that enable rapid subsetting and anaylsis using simple command line tools.
-For example, the climate community has developed their own [netcdf toolkits](http://www.unidata.ucar.edu/software/netcdf/software.html) 
-that accomplish tasks like subsetting and grouping. Similar tools exist for [hdf](https://support.hdfgroup.org/HDF5/Tutor/HDF5Intro.pdf). 
+Witness the glory of [netcdf toolkits](http://www.unidata.ucar.edu/software/netcdf/software.html) 
 
 ### Common data handling methods:
 
-A common approach for handling multidimensional grids is to read the data into an array and then write a series of nested loops with conditional statements to look for a specific range of index values associated with the temporal or spatial slice needed. Also, clever use of matrix algebra is often used to summarize data across spatial and temporal dimensions.
+spatial and temporal dimensions.
 
 ### Challenges:
 
-Many multidimensional datasets are becoming very large as model resolution and sensing capabilities improve. Traditional methods for looping through array datasets to perform subsetting are no longer viable options for handling these large datasets, because we are limited by what our computers can read into memory. In addition, it is often challenging to keep track of index values when manipulating arrays that span multiple dimensions. 
+Nonsense.
