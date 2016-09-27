@@ -1,5 +1,5 @@
 ---
-title: "Introduction to multidimensional arrays"
+title: "Introduction to cloud computing in geoscience"
 teaching: 15
 exercises: 0
 questions:
