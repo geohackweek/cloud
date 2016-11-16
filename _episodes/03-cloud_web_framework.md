@@ -25,9 +25,10 @@ The equivalent of Azure web apps on AWS is the AWS Elastic Beanstalk. However, A
 
 ### Steps to building an API (and the related tools)
 I have some data on an Azure virtual machine. I have climate data in netcdf and modeled streamflow and evapotranspiration data in ASCII. I want to do a few things with it:
+
 1. Allow users to subset the streamflow data by date and return it in a .csv file or JSON format- great for developing web applications
 2. Allow users to view a plot of my streamflow data
-3. Allow users to visualize some spatial data - in this case, my ET values
+3. Allow users to visualize some spatial data - in this case, my ET values - leaflet
 4. Allow users to visualize or play around with netCDF data 
 5. Build the engine for tunneling into an Azure virtual machine (good for being able to run packages/software via a web portal!) - Paramiko
 
