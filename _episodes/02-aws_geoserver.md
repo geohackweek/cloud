@@ -1,20 +1,19 @@
 ---
-title: "HPC clusters on the public cloud"
-teaching: 30
+title: "Geoserver for sharing geospatial data on AWS"
+teaching: 20
 exercises: 0
 questions:
-- "What does an HPC cluster get me and when do I care?"
-- "How much new stuff do I have to learn to be able to get Un-Stuck in HPC space?"
+- "How do I quickly share a large amount of geospatial data between my collaborators?"
 objectives:
-- "Characterize HPC clusters and when they are a good idea and when not." 
-- "Understand ancillary tools like schedulers (Sun Grid Engine for example)."
-- "Understand the connection between infinite loops and debtors prison."
+- "Understand how cloud computing can help you disseminate your data quickly" 
+- "Use Amazon Web Services to spin up a quick instance of an open source server for geospatial data (Geoserver)"
+- "Understand potential use cass"
 keypoints:
-- Cloud Formation Network stuff
-- Azure equivalent (kilroy)
+- AWS s3, EC2 and EBS
+- Creating AMIs
 ---
 
-### What does an HPC cluster get me and when do I care?
+### Using the AWS s3 bucket 
 
 * [hyperlink text](http://cloudraven.org)
 * indented bullet list
@@ -23,7 +22,7 @@ keypoints:
     * take care of 
     * TCB/IP
 
-### When to use xarray:
+### Set up an 
 
 * if your data are multidimensional (e.g. climate data: x, y, z, time)
 * if your data are structured on a regular grid
