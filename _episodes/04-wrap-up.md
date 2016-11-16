@@ -10,5 +10,5 @@ objectives:
 - "Realize $XK is available for literally a song"
 - "Realize that each cloud point of rebuttal from a Trad has a rebutt-uttal"
 keypoints:
-- Anthony_owes_you_twenty_bucks
+- ' '
 ---
