@@ -31,7 +31,7 @@ keypoints:
 * ec2 Instance ~ $1000/year
 * Total cost ~ $2550/year
 
-!(../fig/geoserver.png)
+![geoserver set up](../fig/geoserver.png)
 
 
 
