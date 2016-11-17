@@ -4,6 +4,7 @@ teaching: 20
 exercises: 0
 questions:
 - "How do I quickly share a large amount of geospatial data between my collaborators?"
+- "How can I leverage available cloud tools to enhance data sharing?"
 objectives:
 - "Understand how cloud computing can help you disseminate your data quickly" 
 - "Use Amazon Web Services to spin up a quick instance of an open source server for geospatial data (Geoserver)"
