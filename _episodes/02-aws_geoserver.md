@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Understand how cloud computing can help you disseminate your data quickly" 
 - "Use Amazon Web Services to spin up a quick instance of an open source server for geospatial data (Geoserver)"
-- "Understand potential use cass"
+- "Understand potential use case"
 keypoints:
 - AWS s3, EC2 and EBS
 - Creating AMIs
@@ -29,9 +29,8 @@ Since your data is stored on S3 there is no need to to re-download data when you
 
 ### Set up Geoserver
 * install Apache Tomcat (for stability, use Tomcat7)
-* install PostGres
 * install Geoserver
-* Install OpenGeoSuite from Boundless!
+* Install OpenGeoSuite from Boundless! - comes bundled with PostGIS and bunch of other tools. 
 
 ![geoserver set up](../fig/geoserver.png)
 
@@ -44,9 +43,9 @@ Since your data is stored on S3 there is no need to to re-download data when you
 ### AMIs
 The good thing about setting your server up on the cloud is that you can easily create machine images! A machine image is a replica of your root applications and snapshots of your volumes (i.e. data). Caveat: You need to set up snapshots and there's a small associated cost. You can easily share your Geoserver setup with collaborators. 
 
-### If you'relazy... 
+### And if you're lazy... 
 I have an AMI created with Geoserver installed - I'll share.
 
 ### Ways to save $$$
-1. You may not actually need 8TB of storage space! Don't be a data hog.  
+1. You may not actually need 8TB of storage space! Don't be a data hog. s3 buckets can easily be plugged in anywhere!
 2. Turn off your EC2 machine if you're not using it! 
