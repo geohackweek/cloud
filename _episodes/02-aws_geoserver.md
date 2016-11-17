@@ -23,8 +23,11 @@ keypoints:
 
 Since your data is stored on S3 there is no need to to re-download data when you want to do analysis on an AWS instance. You can use the S3 API to call your data. 
 
-### Set up Geoserver
+### Why use Geoserver?
+* Web map and web feature service
+* Open source :-)
 
+### Set up Geoserver
 * install Apache Tomcat (for stability, use Tomcat7)
 * install PostGres
 * install Geoserver
