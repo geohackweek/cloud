@@ -50,6 +50,3 @@ I have an AMI created with Geoserver installed - I'll share.
 ### Ways to save $$$
 1. You may not actually need 8TB of storage space! Don't be a data hog. s3 buckets can easily be plugged in anywhere!
 2. Turn off your EC2 machine if you're not using it! 
-
-
-$$ x^{2} + y^{2} = z^{2} $$
